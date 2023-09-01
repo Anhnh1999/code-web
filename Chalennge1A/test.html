@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+    <style>
+        /* Style for form layout */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .form-group {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form-group label {
+            min-width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            width: 300px;
+        }
+
+        .form-buttons {
+            margin-top: 20px;
+			margin-left: 500px;
+			display: flex;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>User Management</h2>
+
+    <!-- Form for user management -->
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phonenumber">Phone Number:</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" name="insert">Insert</button>
+            <button type="submit" name="edit">Edit</button>
+            <button type="submit" name="delete">Delete</button>
+        </div>
+    </form>
+</div>
+
+<?php
+// PHP code for database operations
+// ...
+?>
+</body>
+</html>
